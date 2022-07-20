@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 90vw;
+    height: 90vh; */
+    flex-direction: column;
+}
+
+
+/* .Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    flex-direction: column;
+} */
+
+.game {
+    width: 90vw;
+    height: 250px;
+    border: 1px solid black;
+    /* margin: auto; */
+    position: relative;
+}
+
+#cloud {
+    width: 42px;
+    height: 50px;
+    left: 280px;
+    top: 10px;
+    position: relative;
+    background-image: url(/home/mayank/Downloads/imgcloud.png);
+    background-size: 40px 40px;
+    /* animation: block 3s infinite linear; */
+}
+
+.score {
+    height: auto;
+    width: auto;
+    /* right: 580px; */
+    top: 40px;
+    /* position: fixed; */
+}
+
+.gameOverWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+.gameover {
+    /* display: none; */
+    opacity: 0;
+    font-size: 5vmin;
+    position: relative;
+    width: fit-content;
+    height: max-content;
+    top: 10px;
+    /* left: 200px; */
+    color: #525252;
+}
+
+.dinosaur {
+    width: 50px;
+    height: 50px;
+    background-image: url(/home/mayank/Downloads/imgdinosaur.png);
+    /* background-color: black; */
+    background-size: 70px 50px;
+    position: relative;
+    top: 200px;
+    /* animation: jump 0.3s linear; */
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 110px;
+    }
+    50% {
+        top: 50px;
+    }
+    80% {
+        top: 110px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+.cactus {
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    /* left: 780px; */
+    background-image: url(/home/mayank/Downloads/imgcactus.png);
+    background-size: 40px 40px;
+    /* animation: block 2s infinite linear; */
+}
+
+@media (min-width:1480px) {
+    #cactus {
+        animation: block 3s infinite linear;
+    }
+    #cloud {
+        animation: block 4s infinite linear;
+    }
+    @keyframes block {
+        0% {
+            left: 97.5%;
+        }
+        100% {
+            left: -0.5%;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    #cactus {
+        animation: block 1s infinite linear;
+    }
+    #cloud {
+        animation: block 2s infinite linear;
+    }
+    @keyframes block {
+        0% {
+            left: 90%;
+        }
+        100% {
+            left: -0.5%;
+        }
+    }
+}
+
+
+/* @keyframes block {
+    0% {
+        left: 780px;
+    }
+    100% {
+        left: -20px;
+    }
+} */
+
+#btn {
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 90vw;
+    position: absolute;
+}
+
+.center {
+    /* margin-left: 28%; */
+    /* margin-right: 28%; */
+}
